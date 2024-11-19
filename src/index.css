@@ -1,0 +1,373 @@
+:root {
+  --background-primary: #bfac9a;
+  --color-primary: #241C19;
+  --color-secondary: rgb(55, 55, 55);
+  --color-dash: #bfac9a;
+  --background-reverse: #241C19;
+  --color-reverse: #bfac9a;
+  --box-shadow: rgba(0, 0, 0, 0.3);
+}
+.iconLink{
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  /* background-color: pink; */
+}
+.git-icon{
+  height: 3.1rem;
+  width:70%;
+  color: #f1b069;
+  /* background-color: blue; */
+}
+.globe-icon{
+  height: 3.1rem;
+  width:100%;
+  /* background-color: red; */
+  color: #f1b069;
+}
+.sun {
+  --background-primary: #bfac9a;
+  --color-primary: #241C19;
+  --color-secondary: rgb(66, 66, 66);
+}
+
+.moon {
+  --background-primary: #241C19;
+  --color-primary: #bfac9a;
+  --color-secondary: rgb(184, 184, 184);
+  --box-shadow: rgba(255, 255, 255, 0.3);
+}
+
+html, body {
+  background-color: var(--background-primary);
+  color: var(--color-primary);
+  font-family: "Roboto Mono";
+  font-weight: 400;
+  overflow-y: scroll;
+}
+
+h1, h2, p {
+  color: var(--color-primary);
+}
+
+h4 {
+  color: var(--color-secondary);
+}
+
+textarea {
+  width: 100%;
+  height: 1.3em;
+  color: var(--color-primary);
+  background-color: var(--background-primary);
+  font-size: 1.25em;
+  border-color: var(--color-dash);
+  border-width: 0 0 2px;
+  resize: both;
+  outline: 0;
+}
+
+textarea:focus {
+  border-color: var(--color-primary);
+}
+
+textarea::placeholder {
+  color: var(--color-dash);
+}
+
+input[type="submit"] {
+  background-color: var(--background-reverse);
+  color: var(--color-reverse);
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+@media (hover: none) {
+  .my-theme_toggle {
+    color: var(--color-primary);
+  }
+}
+
+.fa {
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #4a3023; /* Default color for icons */
+}
+
+.fa:hover {
+  color: #f1b069; /* Change icon color on hover */
+  transform: scale(1.1); /* Slightly scale the icon for a hover effect */
+  cursor: pointer;
+}
+.fa-linkedin:hover,
+.fa-github:hover,
+.fa-twitter:hover {
+  color: #f1b069; /* Same as icon color on hover */
+  transform: scale(1.1); /* Adds hover zoom effect */
+  cursor: pointer;
+}
+a, a:visited, a:active, .theme_toggle, .theme_toggle:visited, .theme_toggle:active {
+  text-decoration: none;
+  color: #4a3023; /* Default link color */
+}
+
+
+a:hover, .theme_toggle:hover {
+  color: #f1b069; /* Hover color for regular links stays consistent with icons */
+  background-color: #271c1a;
+  width: 100%;
+  padding: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* When the link is active (clicked) and hovered */
+a:active:hover, .theme_toggle:active:hover {
+  color: #f1b069; /* Maintain the same color when hovered after being clicked */
+}
+
+#outer {
+  display: flex;
+  flex-direction: row;
+  min-height: calc(50vh / 3);
+  align-items: center;
+}
+
+#inner {
+  display: flex;
+  flex-direction: row;
+  flex-basis: calc(100% / 3);
+  align-items: flex-start;
+  flex-shrink: 10;
+}
+
+#blog_header {
+  margin-right: 250px;
+  display: flex;
+  font-size: x-large;
+}
+
+#blog {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+#form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#nav_bar {
+  text-align: right;
+  max-width: max-content;
+  margin-right: 5vh;
+  flex-grow: 3;
+  line-height: 35px;
+}
+
+.nav_element {
+  color: #1a1311;
+}
+
+
+#content {
+  flex-grow: 7;
+  max-height: max-content;
+}
+
+.clickable, .clickable:visited, .clickable:active {
+  cursor: pointer;
+  text-decoration: underline;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  color: var(--color-primary);
+}
+
+.clickable:hover, .credit:hover {
+  color: #76453B !important;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-5%);
+  background-color: #AB886D;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 5px;
+  font-size: 0.75em;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(73, 73, 73, 0.626);
+}
+
+.clickable:hover .tooltip {
+  display: block;
+}
+
+.credit, .credit:visited, .credit:active {
+  cursor: pointer;
+  text-decoration: underline;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.credit_p {
+  font-size: small;
+  margin-top: -10px;
+}
+
+.links {
+  /* background-color: red; */
+  width: 120%;
+  letter-spacing: 0.5em;
+  /* margin:5px; */
+  
+}
+.links a:hover{
+    /* background-color: red; */
+    width:20px;
+    padding:5px;
+    /* margin:5px; */
+}
+
+.disclaimer {
+  font-size: x-small;
+}
+
+.count {
+  font-size: x-small;
+  text-align: right;
+  align-self: flex-start;
+  margin-top: -5px;
+}
+
+.box {
+  outline: 2px solid var(--color-primary);
+}
+
+.food {
+  max-width: 50%;
+}
+
+.venn {
+  max-width: 100%;
+}
+
+/* Portfolio styling */
+.portfolio-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #241C19;
+
+  padding: 10px;
+  border-radius: 30px;
+  width: 170%; /* Ensures it takes the full available width */
+}
+
+.portfolio-item {
+  overflow: hidden;
+  /* outline-offset: 4px;  */
+  /* outline: 1px solid #C65D7B;  */
+    border-radius: 5%;
+  width: 45%; /* Adjust width to control the number of items per row */
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+.portfolio-item-inner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 1rem;
+  /* background-color: #C65D7B; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  width: 100%; /* Ensure image takes full width of the item */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.project-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  background-color: rgba(36, 28, 25, 0.6);
+    opacity: 0;
+  transition: 0.3s ease;
+}
+
+.portfolio-item-inner:hover .project-mask {
+  opacity: 1;
+  border: 10px black;
+  
+}
+
+.project-link {
+  position: relative;
+  /* top: 80%; */
+  left: 40%;
+  align-items: center;
+  margin-top:-30px  ;
+  padding-top:10px;
+  /* background-color: yellow; */
+  width:100%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  cursor:pointer;
+}
+
+.github-link {
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  top: 50%;
+  left: 60%;
+  margin: 50px;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  cursor: pointer;
+}
+.text-white {
+  color: #AB886D;
+}
+.project-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  justify-content: space-between;
+}
+
+.project-title {
+  font-size: 1.05rem;
+  font-weight: bold;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  font-size: 0.75rem;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

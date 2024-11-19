@@ -1,0 +1,43 @@
+.active {
+    color: #583101 !important;
+}
+.nav-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+    text-transform: lowercase;
+  }
+  
+  .wiggle-line {
+    width: 6rem;  /* Made wider to show more waves */
+    height: 0.5rem;
+    color: #241C19;
+    margin-top: -0.25rem;
+  }
+  
+  .theme-toggle {
+    cursor: pointer;
+    color: var(--color-primary);
+  }
+  
+.fadeIn-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms ease-in-out;
+}
+
+.fadeIn-exit {
+    opacity: 0;
+}
+
+.fadeIn-exit-active {
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
+}

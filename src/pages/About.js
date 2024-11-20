@@ -5,10 +5,13 @@ function About() {
   useEffect(() => {
     document.title = "about me";
   }, []);
-
+  const handleImageError = () => {
+    console.log("Failed to load the image.");
+  };
   return (
     <div>
-      <img src="/images/me.JPEG" alt="Shraddha pretending to smile" width="200" height="auto" />
+      <img  src={require("../images/picture.png")} alt="Shraddha pretending to smile"  onError={handleImageError}
+width="200" height="auto" />
       <p>
         <nobr>📍 Halifax, NS</nobr>
       </p>

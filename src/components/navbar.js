@@ -39,7 +39,7 @@ function NavBar() {
   return (
     <div>
       <nav className="flex flex-col space-y-4">
-        <CustomNavLink to="/">home</CustomNavLink>
+        <CustomNavLink to="/portfolio-web">home</CustomNavLink>
         <CustomNavLink to="/about">about</CustomNavLink>
         <CustomNavLink to="/projects">projects</CustomNavLink>
         {/* <CustomNavLink to="/resume">resume</CustomNavLink> */}

@@ -18,7 +18,7 @@ function BlogNavBar() {
     <div>
       <nav>
         <nobr>
-          <NavLink to="/">home</NavLink> | <NavLink to="/about">about</NavLink>{" "}
+          <NavLink to="/portfolio-web">home</NavLink> | <NavLink to="/about">about</NavLink>{" "}
           | <NavLink to="/projects">projects</NavLink> |{" "}
           {/* <NavLink to="/log">logbook</NavLink> |{" "} */}
           {/* <NavLink to="/resume">resume</NavLink> |{" "} */}

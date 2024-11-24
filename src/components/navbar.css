@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.0rem;
   }
   
   /* .nav-link {
@@ -15,14 +15,12 @@
     margin-bottom: 0.25rem;
     text-transform: lowercase;
   } */
-  
   .wiggle-line {
-    width: 6rem;  /* Made wider to show more waves */
     height: 0.5rem;
     color: #241C19;
-    margin-top: -0.25rem;
+    margin-top: -.5rem;
   }
-  
+
   .theme-toggle {
     cursor: pointer;
     color: var(--color-primary);

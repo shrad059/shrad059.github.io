@@ -254,6 +254,9 @@ a:active:hover, .theme_toggle:active:hover {
 .box {
   outline: 2px solid var(--color-primary);
 }
+.footer{
+  width:max-content;
+}
 
 .food {
   max-width: 50%;
@@ -424,9 +427,9 @@ a:active:hover, .theme_toggle:active:hover {
 #nav_bar .nav-links.open {
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
+  width: 100%;
   position: absolute;
-  top: 60px;
+  top: 30px;
   left: 0;
   box-shadow: var(--box-shadow);
 }

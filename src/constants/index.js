@@ -6,11 +6,18 @@ import algorithm from '../assets/img/6.gif';
 import start from '../assets/img/start.png';
 import map from '../assets/img/map.png';
 import resume from '../assets/img/resume.png';
-
+import Pandemic from '../assets/img/pandemic.png';
 
 
 
 const projects = [
+  {
+    name: "COVID-19 Pandemic Visualizer",
+    description:"Currently, working on a project inspired by Github's homepage's globe which displayes real time github activity on a globe map. Constructed using three-globe, and dataset from ourworldindata.org, it simulates the confirmed covid cases from 2020-2024 on the globe .",
+    //  image: tic,
+    image: Pandemic,
+    github_link: "https://github.com/shrad059/pandemic",
+  },
   {
     name: "AUDly: Music Social App",
     description:"A full-stack music-sharing platform built using React Native, enabling users to connect, share, and discover music within a vibrant social community. Features include real-time sharing, and a seamless, user-friendly interface.",

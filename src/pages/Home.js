@@ -42,9 +42,9 @@ function Home() {
       <h2>i'm shraddha!</h2>
       <p>welcome to my little node of the internet!</p>
       <p>
-        i'm a student and aspiring software engineer based in Canada &#127809;. 
+        I'm a student and aspiring software engineer based in Canada &#127809;. 
         I enjoy building fun projects to bring joy to the web, collaborating with friends, working on hard problems, and making an impact. 
-        When I am not busy coding something, i'm probably{" "}
+        When I am not busy coding something, I'm probably{" "}
         <a
           className="clickable"
           id="hobbies"

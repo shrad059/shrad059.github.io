@@ -29,8 +29,8 @@ function AppRoutes() {
 
           <div class="flex-container" id="content">
             <Routes>
-              <Route path="/portfolio-web" element={<Home />} />
-              <Route path="about" element={<About />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
               <Route path="projects" element={<Projects />} />
               {/* <Route path="resume" element={<Resume />} /> */}
             </Routes>

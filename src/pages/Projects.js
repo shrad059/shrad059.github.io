@@ -1,13 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-// import { styles } from "../styles";
-import { projects } from "../constants"; // Ensure this path is correct
-// import { SectionWrapper } from "../hoc"; // Ensure this path is correct
-import { textVariant } from "../utils/motion.js"; // Ensure this path is correct
+import { projects } from "../constants";
+import { textVariant } from "../utils/motion.js";
 import { Tilt } from "react-tilt";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const ProjectCard = ({ name, description, tags, image, github_link, source_code_link }) => {
   return (
@@ -21,7 +19,7 @@ const ProjectCard = ({ name, description, tags, image, github_link, source_code_
         className="portfolio-item-inner"
       >
         <div>
-          <img src={image} alt="project_image" className="project-image" />
+          <img src={image} alt={`${name} screenshot`} className="project-image" />
           <div className="project-mask">
             <div className="iconLink">
               <div
@@ -42,8 +40,15 @@ const ProjectCard = ({ name, description, tags, image, github_link, source_code_
           </div>
         </div>
         <div className="project-content">
-          <p className="project-title text-white ">{name}</p>
+          <p className="project-title text-white">{name}</p>
           <p className="project-description text-white">{description}</p>
+          <div className="project-tags">
+            {tags?.map((tag, index) => (
+              <span key={index} className="tag">
+                {tag}
+              </span>
+            ))}
+          </div>
         </div>
       </Tilt>
     </div>
@@ -51,6 +56,10 @@ const ProjectCard = ({ name, description, tags, image, github_link, source_code_
 };
 
 const Portfolio = () => {
+  useEffect(() => {
+    document.title = "my projects ✨";
+  }, []);
+
   return (
     <section className="portfolio-section" id="portfolio">
       <div className="container">

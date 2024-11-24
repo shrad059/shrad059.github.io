@@ -8,13 +8,13 @@
     margin-bottom: 1.5rem;
   }
   
-  .nav-link {
+  /* .nav-link {
     font-size: 1.2rem;
     text-decoration: none;
     color: var(--color-primary);
     margin-bottom: 0.25rem;
     text-transform: lowercase;
-  }
+  } */
   
   .wiggle-line {
     width: 6rem;  /* Made wider to show more waves */

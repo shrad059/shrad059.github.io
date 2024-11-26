@@ -17,6 +17,8 @@ const projects = [
     //  image: tic,
     image: Pandemic,
     github_link: "https://github.com/shrad059/pandemic",
+    source_code_link:"https://shrad059.github.io/pandemic/",
+
   },
   {
     name: "AUDly: Music Social App",

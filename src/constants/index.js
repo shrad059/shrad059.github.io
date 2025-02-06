@@ -7,13 +7,23 @@ import start from '../assets/img/start.png';
 import map from '../assets/img/map.png';
 import resume from '../assets/img/resume.png';
 import Pandemic from '../assets/img/pandemic.png';
+import Construction from '../assets/img/construction.jpg';
 
 
 
 const projects = [
   {
+    name: "Trend Insight",
+    description:"Developed a machine learning model to predict fashion trends by analyzing 10,000+ Instagram posts, leveraging YOLO and SAM for clothing segmentation, RoBERTa for sentiment analysis of post captions, enhancing sentimental precision to 91%.",
+    //  image: tic,
+    image: Construction,
+    // github_link: "https://github.com/shrad059/pandemic",
+    // source_code_link:"https://shrad059.github.io/pandemic/",
+
+  },
+  {
     name: "COVID-19 Pandemic Visualizer",
-    description:"Currently, working on a project inspired by Github's homepage's globe which displayes real time github activity on a globe map. Constructed using three-globe, and dataset from ourworldindata.org, it simulates the confirmed covid cases from 2020-2024 on the globe .",
+    description:"[Weekend project] inspired by Github's homepage's globe which displayes real time github activity on a globe map. Constructed using three-globe, and dataset from ourworldindata.org, it simulates the confirmed covid cases from 2020-2024 on the globe .",
     //  image: tic,
     image: Pandemic,
     github_link: "https://github.com/shrad059/pandemic",

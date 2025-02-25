@@ -446,6 +446,7 @@ a:active:hover, .theme_toggle:active:hover {
 
 .links {
   margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
   letter-spacing: 0.3em;
   display: flex;
@@ -456,6 +457,22 @@ a:active:hover, .theme_toggle:active:hover {
 .links a{
   margin:2px;
 }
+
+.version{
+  /* background-color: red; */
+  width:100%;
+  font-size: small;
+}
+.version a{
+  text-decoration: underline;
+}
+.version a:hover{
+  text-decoration: underline;
+  border-radius: 0%;
+  padding:1%;
+  background-color: #4a3023;
+}
+
 
 
 .links a:hover {

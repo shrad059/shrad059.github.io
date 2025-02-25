@@ -68,11 +68,16 @@ function NavBar() {
           target="_blank"
           className="fa fa-github fa-lg"
         ></a>
+
         <a
           href="mailto:sh913738@dal.ca"
           className="fa fa-envelope fa-lg"
         ></a>
+
       </div>
+      <span className="version">prev <a href="https://shrad059.github.io/portfolio/ " target="_blank"
+      >version </a></span>
+
     </div>
   );
 }
